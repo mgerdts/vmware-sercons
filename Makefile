@@ -10,6 +10,9 @@ ifeq ($(OS),SunOS)
 CFLAGS += -m32
 CFLAGS += -lnsl -lsocket
 endif
+ifeq ($(OS),Linux)
+CFLAGS += -lpthread
+endif
 
 PROG = sercons
 
