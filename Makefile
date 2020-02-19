@@ -3,7 +3,6 @@ OS := $(shell uname)
 
 CFLAGS = -Wall -Wextra -Werror -lpthread
 ifeq ($(OS),Darwin)
-CFLAGS += -m32
 CFLAGS += -mmacosx-version-min=10.6
 endif
 ifeq ($(OS),SunOS)
