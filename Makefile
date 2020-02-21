@@ -1,7 +1,7 @@
 
 OS := $(shell uname)
 
-CFLAGS = -Wall -Wextra -Werror -lpthread
+CFLAGS = -Wall -Wextra -Werror -pthread
 ifeq ($(OS),Darwin)
 CFLAGS += -mmacosx-version-min=10.6
 endif
